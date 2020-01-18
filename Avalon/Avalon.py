@@ -23,4 +23,7 @@ curr_characters = [0, 1, 2, 7, 8]
 random.shuffle(curr_characters)
 
 for c in curr_characters:
-    print(character_list[c])
+    if c == 0:
+        print("My character: " + character_list[curr_characters[c]])
+    else:
+        print("--")
