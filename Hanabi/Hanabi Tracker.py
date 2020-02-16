@@ -1,8 +1,16 @@
 def new_card():
-    colors = ['Red', 'Yellow', 'Blue', 'Green', 'White', 'Rainbow']
-    # colors = ['Red', 'Yellow', 'Blue', 'Green', 'White']
+    if num_colors == 6:
+        colors = ['Red', 'Yellow', 'Blue', 'Green', 'White', 'Rainbow']
+    elif num_colors == 5:
+        colors = ['Red', 'Yellow', 'Blue', 'Green', 'White']
     numbers = [1, 2, 3, 4, 5]
     return colors, numbers
+
+def start_game():
+    hand = dict()
+    for i in range(1, 6):
+        hand[i] = new_card()
+    return hand
 
 def print_hand():
     for i in range(1, 6):
@@ -42,12 +50,9 @@ def play(num):
     cards[5] = new_card()
     return True
 
-cards = dict()
-cards[1] = new_card()
-cards[2] = new_card()
-cards[3] = new_card()
-cards[4] = new_card()
-cards[5] = new_card()
+
+num_colors = 6
+cards = start_game()
 
 hint_number([2,5], 1)
 hint_color([5], 'Green')
