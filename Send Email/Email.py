@@ -10,6 +10,6 @@ server.sendmail('from email address', 'to email address', 'Subject: Test \
 server.quit()
 
 # Send text message through SMS gateway of destination number
-# server.sendmail('matt.karam@gmail.com', '2104626492@messaging.sprintpcs.com', 'Hello') # Text message
+# server.sendmail('xxxxx@gmail.com', 'xxxxxxxxxx@messaging.sprintpcs.com', 'Hello') # Text message
 
 # Need to enable less secure apps to access your Google account for this to work
